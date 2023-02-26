@@ -1,0 +1,13 @@
+type Company implements Node {
+  id: ID!
+  companyName: String!
+  representative: String!
+  phoneNumber: String!
+  departments: DepartmentPagination!
+  employees: EmployeePagination!
+}
+
+type CompanyPagination implements Pagination {
+  pageInfo: PaginationInfo!
+  nodes: [Company!]!
+}

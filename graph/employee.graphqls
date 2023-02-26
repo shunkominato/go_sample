@@ -1,0 +1,21 @@
+type Employee implements Node {
+  id: ID!
+  name: String!
+  gender: Gender!
+  email: String!
+  latestLoginAt: Timestamp!
+  dependentsNum: Int!
+  isManager: Boolean!
+  department: Department!
+  company: Company!
+}
+
+enum Gender {
+  Male
+  Female
+}
+
+type EmployeePagination implements Pagination {
+  pageInfo: PaginationInfo!
+  nodes: [Employee!]!
+}
