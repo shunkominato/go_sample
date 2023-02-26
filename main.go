@@ -1,10 +1,11 @@
 package main
 
 import (
+	"fmt"
 	"log"
 	"net/http"
+
 	"github.com/jinzhu/gorm"
-	"github.com/jinzhu/gorm/dialects/postgres"
 	"github.com/labstack/echo/v4"
 	// "github.com/labstack/echo/v4/middleware"
 )
